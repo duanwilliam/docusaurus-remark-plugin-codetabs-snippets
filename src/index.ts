@@ -8,16 +8,12 @@ type TransformNodeOptions = Required<Pick<Options, 'extensions'>>;
 
 const transformNode = (node: MDASTNode, { extensions }: TransformNodeOptions) => {
   node.value = node.value.replace(codetabLangCodeSnippetRegex, (...args) => {
-    console.log('regex:', codetabLangCodeSnippetRegex.source)
-    console.log(args);
     const groups = args[args.length - 1];
-    console.log(groups)
     const file = groups.file;
     if (!file) { return args[0]; }
   
     const ext = file.substring(file.lastIndexOf('.') + 1);
     const lang = extensions[ext] ?? ext;
-    console.log('z', groups.snippet, groups.meta)
     return `\`\`\`${lang} ${groups.snippet} ${groups.meta ?? ''}`;
   });
 }
