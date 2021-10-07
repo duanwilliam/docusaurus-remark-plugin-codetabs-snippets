@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-remark-plugin-codetabs-snippets",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Docusaurus v2 plugin Remark utility plugin to allow sourcing code from files in codetabs using `docusaurus-remark-plugin-codetabs` and `remark-plugin-code-snippets`.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
