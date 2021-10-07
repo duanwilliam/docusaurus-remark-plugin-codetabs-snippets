@@ -1,6 +1,6 @@
 # docusaurus-remark-plugin-codetabs-snippets
 
-Docusaurus v2 plugin Remark utility plugin to allow sourcing code from files in codetabs using `docusaurus-remark-plugin-codetabs` and `remark-plugin-code-snippets`.
+Docusaurus v2 Remark utility plugin to allow sourcing code from files in codetabs using `docusaurus-remark-plugin-codetabs` and `remark-plugin-code-snippets`.
 
 ## Installation
 
